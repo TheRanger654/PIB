@@ -1,0 +1,19 @@
+body{
+  background-color: black;
+}
+
+#container{
+  width: 800px;
+  margin: auto;
+}
+
+#canvas{
+  border: aliceblue 2px solid;
+  background-color: aliceblue;
+}
+$filePath = "drawing.json";
+$current = stringify(drawing[]);
+$file = fopen($filePath, 'w')
+or die("Error opening output file");
+fwrite($file, $current);
+fclose($file);
